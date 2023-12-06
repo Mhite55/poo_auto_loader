@@ -1,0 +1,18 @@
+{
+    "name": "stagiaire4/poo_auto_loader",
+    "description": "..l..-_-..l..",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Animal\\": "src/Animal/",
+            "App\\Owner\\": "src/Owner/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mhite55",
+            "email": "pierreguyot55@gmail.com"
+        }
+    ],
+    "require": {}
+}
