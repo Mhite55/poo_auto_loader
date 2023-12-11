@@ -14,5 +14,7 @@
             "email": "pierreguyot55@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    }
 }

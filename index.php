@@ -12,12 +12,22 @@
     use App\Animal\Animal;
     use App\Owner\Owner;
 
-    $animal = New Animal("Grégory");
+    $owner = new Owner("Vivien le démon des enfers profonde");
+    $owner2 = new Owner("Jojo");
+
+    $animal = New Animal("Grégory", "Rat Taupe Nu", null);
     echo "<p>" . $animal->getName() . "</p>";
 
-    $animal = New Animal("Pierre il est gentil =) ");
+    $animal2 = New Animal("Pierre il est gentil =) ", "Blob", null);
     echo $animal->getName();
 
+    $owner->addAnimals($animal);
+    $owner->addAnimals($animal2);
+    $owner->showAnimals();
+    $owner2->showAnimals();
+
+    $owner->removeAnimals($animal2);
+    $owner->showAnimals();
 
     ?>
 </body>
